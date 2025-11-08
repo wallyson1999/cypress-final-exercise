@@ -10,7 +10,8 @@ module.exports = defineConfig({
   },
   e2e: {
     baseUrl: 'http://automationexercise.com',
-    specPattern: 'cypress/e2e/**/*.spec.{js,ts}',
+    // Ajustado para a pasta 'e2e' que existe no repo
+    specPattern: 'e2e/**/*.spec.{js,ts}',
     setupNodeEvents(on, config) {
       // intentionally not auto-registering cypress-mochawesome-reporter plugin here.
       // We generate reports via the npm scripts (mochawesome + mochawesome-merge + marge)
